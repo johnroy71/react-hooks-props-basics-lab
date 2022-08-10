@@ -10,10 +10,10 @@ console.log(user);
 function App() {
   return (
     <div>
-      <NavBar />
-      <Home />
-      <About />
-    </div>
+     <NavBar />
+     <Home user={user}/>
+     <About bio= {user.bio} github={user.links.github} linkedin={user.links.linkedin}/>
+     </div>
   );
 }
 
